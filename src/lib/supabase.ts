@@ -18,7 +18,6 @@ export type Job = {
   description: string
   requirements: string
   created_at: string
-  employer_id?: string
 }
 
 export type Resume = {
@@ -51,18 +50,6 @@ export type Profile = {
   bio: string
   location: string
   website: string
-  user_type: 'jobseeker' | 'employer'
-  created_at: string
-  updated_at: string
-}
-
-export type Application = {
-  id: string
-  job_id: string
-  user_id: string
-  resume_id: string
-  status: 'pending' | 'reviewed' | 'interview' | 'accepted' | 'rejected'
-  cover_letter: string
   created_at: string
   updated_at: string
 }

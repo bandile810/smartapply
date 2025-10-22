@@ -32,21 +32,13 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
           
           <div className="relative">
             <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-            <select
+            <input
+              type="text"
+              placeholder="Location"
               value={location}
               onChange={(e) => setLocation(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all duration-200 appearance-none bg-white"
-            >
-              <option value="">All locations</option>
-              <option value="Eswatini">Eswatini</option>
-              <option value="Mbabane">Mbabane, Eswatini</option>
-              <option value="Manzini">Manzini, Eswatini</option>
-              <option value="Lesotho">Lesotho</option>
-              <option value="Maseru">Maseru, Lesotho</option>
-              <option value="Botswana">Botswana</option>
-              <option value="Gaborone">Gaborone, Botswana</option>
-              <option value="Maun">Maun, Botswana</option>
-            </select>
+              className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all duration-200"
+            />
           </div>
           
           <div className="relative">
@@ -57,11 +49,11 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
               className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all duration-200 appearance-none bg-white"
             >
               <option value="">Any salary</option>
-              <option value="10000">E/M/P 10,000+</option>
-              <option value="20000">E/M/P 20,000+</option>
-              <option value="30000">E/M/P 30,000+</option>
-              <option value="40000">E/M/P 40,000+</option>
-              <option value="50000">E/M/P 50,000+</option>
+              <option value="50000">$50,000+</option>
+              <option value="75000">$75,000+</option>
+              <option value="100000">$100,000+</option>
+              <option value="125000">$125,000+</option>
+              <option value="150000">$150,000+</option>
             </select>
           </div>
         </div>
