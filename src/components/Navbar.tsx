@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Briefcase, User, FileText, Home } from 'lucide-react'
+import { Briefcase, User, FileText, Home, LayoutDashboard } from 'lucide-react'
 
 export default function Navbar() {
   const location = useLocation()
 
   const navItems = [
     { path: '/', label: 'Home', icon: Home },
+    { path: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { path: '/jobs', label: 'Jobs', icon: Briefcase },
     { path: '/resume', label: 'Create Resume', icon: FileText },
     { path: '/profile', label: 'Profile', icon: User },
